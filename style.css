@@ -1,3 +1,7 @@
+
+/* ===== MOBILE RESPONSIVENESS PATCH ===== */
+*, *::before, *::after { box-sizing: border-box; }
+img, video, iframe { max-width: 100%; height: auto; }
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 :root {
@@ -244,7 +248,7 @@ nav .container {
     margin-left: 1rem;
 }
 
-/* ─── Hero photo frame ─── */
+/* âââ Hero photo frame âââ */
 .hero-image {
     position: relative;
     display: flex;
