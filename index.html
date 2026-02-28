@@ -161,6 +161,23 @@
             color: #c084fc;
         }
     </style>
+
+  <!-- Mobile responsiveness overrides -->
+  <style>
+    @media (max-width: 640px) {
+      .services-grid { grid-template-columns: 1fr !important; }
+      nav { padding: 1rem !important; }
+      .hero-section, section { padding: 3rem 1.25rem !important; }
+      h1 { font-size: clamp(2rem, 10vw, 3rem) !important; }
+      h2 { font-size: clamp(1.5rem, 7vw, 2.2rem) !important; }
+      .glass { padding: 1.5rem !important; }
+      p { font-size: 1rem !important; }
+    }
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -207,7 +224,7 @@
 
     <section id="story" style="background: linear-gradient(to bottom, #0a0a0c, #1a0b2e);">
         <div class="container"
-            style="max-width: 1000px; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: center;">
+            style="max-width: 1000px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; align-items: center;">
             <div class="glass" style="padding: 1rem; border-radius: 30px;">
                 <img src="neon-logo.jpg" alt="Meghan Kylie Logo" style="width: 100%; border-radius: 20px;">
                 <p style="text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.45); margin-top: 0.6rem; margin-bottom: 0; font-weight: 300; letter-spacing: 0.5px;">Image: Christina Suraci</p>
@@ -320,7 +337,7 @@
                     just a fairy chat ✨</p>
 
                 <form action="https://formspree.io/f/meghankyliemusic.bookingmail@gmail.com" method="POST">
-                    <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
