@@ -353,7 +353,7 @@ section {
 /* Services */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
 }
 
@@ -383,6 +383,7 @@ section {
     max-width: 700px;
     margin: 0 auto;
     padding: 4rem;
+    box-sizing: border-box;
 }
 
 .form-group {
@@ -470,4 +471,13 @@ footer {
         max-width: 320px;
         margin: 0 auto;
     }
+}
+
+/* Small phones (under 480px) */
+@media (max-width: 480px) {
+    .contact-form { padding: 1.5rem; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .nav-links { gap: 1rem; }
+    .services-grid { grid-template-columns: 1fr; }
+    .hero-image-inner { max-width: 260px; }
 }
